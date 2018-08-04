@@ -1,0 +1,78 @@
+<div class="container drop-shadow margin">
+
+<h3>External Contacts</h3>
+<h5>Select the client contacts associated with this offer</h5>
+
+
+</div>
+
+
+<div class="container drop-shadow margin">
+	<div class="table-responsive">
+
+		<div class="table-responsive">
+			<table st-set-filter="customFilter" st-table="contactData"
+				st-safe-src="rowCollection"
+				class="table table-bordered table-striped">
+
+				<thead>
+					<tr>
+						<th scope="col" selected="selected"></th>
+						<th st-sort="type" scope="col">Type</th>
+						<th st-sort="name" scope="col">Name</th>
+						<th st-sort="title" scope="col">Title</th>
+						<th st-sort="phone" scope="col">Phone</th>
+						<th st-sort="ext" scope="col">Ext</th>
+						<th st-sort="fax" scope="col">Fax</th>
+						<th st-sort="email" scope="col">Email</th>
+						
+					</tr>
+
+				</thead>
+				<tbody>
+					<tr ng-repeat="row in contactData">
+						<td row-select="row" ng-click="select(row.id)" selectdt="selected"></td>
+						<td
+							ng-if="(!dataadd && !row.selected)  || (row.selected && !dataadd)">{{row.type}}</td>
+						<td ng-if="dataadd || (row.selected && dataadd )"><input
+							type="text" class="form-control" ng-model="row.type"/></td>
+							<td
+							ng-if="(!dataadd && !row.selected)  || (row.selected && !dataadd)">{{row.name}}</td>
+						<td ng-if="dataadd || (row.selected && dataadd )"><input
+							type="text" class="form-control" ng-model="row.name"/></td>
+							<td
+							ng-if="(!dataadd && !row.selected)  || (row.selected && !dataadd)">{{row.title}}</td>
+						<td ng-if="dataadd || (row.selected && dataadd )"><input
+							type="text" class="form-control" ng-model="row.title"/></td>
+							<td
+							ng-if="(!dataadd && !row.selected)  || (row.selected && !dataadd)">{{row.phone}}</td>
+						<td ng-if="dataadd || (row.selected && dataadd )"><input
+							type="text" class="form-control" ng-model="row.phone"/></td>
+							<td
+							ng-if="(!dataadd && !row.selected)  || (row.selected && !dataadd)">{{row.ext}}</td>
+						<td ng-if="dataadd || (row.selected && dataadd )"><input
+							type="text" class="form-control" ng-model="row.ext"/></td>
+							<td
+							ng-if="(!dataadd && !row.selected)  || (row.selected && !dataadd)">{{row.fax}}</td>
+						<td ng-if="dataadd || (row.selected && dataadd )"><input
+							type="text" class="form-control" ng-model="row.type"/></td>
+							<td
+							ng-if="(!dataadd && !row.selected)  || (row.selected && !dataadd)">{{row.email}}</td>
+						<td ng-if="dataadd || (row.selected && dataadd )"><input
+							type="text" class="form-control" ng-model="row.email"/></td>
+					</tr>
+				</tbody>
+
+				
+			</table>
+		</div>
+	</div>
+</div>
+
+
+<div class="container drop-shadow margin">
+
+
+
+
+</div>

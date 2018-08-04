@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+
+<html ng-app="productApp">
+<head>
+<link rel="icon" href="/EsipWeb/assets/images/fordtitle.ico" type="image/x-icon"/>
+<title>IST</title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, max-scale=1, user-scalable=yes" />
+
+<link rel="stylesheet" href="assets/css/app/main.css" />
+
+<!--Angular Js  -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="https://code.angularjs.org/1.6.4/angular.js"></script>
+<script src="assets/js/lib/angular-route.js"></script>
+<script src="assets/js/lib/angular-translate.js"></script>
+<script src="assets/js/lib/angular-translate-loader-static-files.js"></script>
+<script src="assets/js/lib/angular-indexed-db.js"></script>
+<script src="assets/js/lib/lobibox.js"></script>
+
+<!-- Boostrap libs -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="assets/css/lib/lobibox.css" />
+
+<!-- Data Table Libs -->
+<link rel="stylesheet" href="assets/css/app/data-table-style.css" />
+<script data-require="ui-bootstrap@0.11.0" data-semver="0.11.0" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.min.js"></script>
+
+<!-- Common Components -->
+<script data-require="lodash.js@3.10.0" data-semver="3.10.0" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.0/lodash.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<script type="text/javascript" src="assets/js/lib/angular-block-ui.js"></script>
+
+<!-- Application related JS -->
+<script src="assets/js/app/home_nav_app.js"></script>
+<script src="assets/js/app/ux.js"></script>
+
+
+<!--PDF Display  -->
+<script src="assets/js/lib/angular-pdf.js"></script>
+<script src="assets/js/lib/pdf.js"></script>
+
+<!-- Data Table  Js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.7.0/angular-sanitize.js"></script>
+   <script src="dataTable/smart-table.js"></script>
+   <script src="dataTable/smart-table.debug.js"></script>
+   <script src="dataTable/customsearch-script.js"></script>
+   <script src="dataTable/pageSelect.directive.js"></script>
+   <script src="dataTable/dataTable-add-script.js"></script>
+   <script src="dataTable/rowSelect.js"></script>
+   <script src="dataTable/rowSelectAll.js"></script>
+   <script src="dataTable/exportToExcel.js"></script>
+   <script src="dataTable/paginationCal.js"></script>
+   
+
+
+ <!-- Custom Tags -->
+ <script src="assets/js/app/customcomponents.js"></script>
+
+ <!-- Common Js -->
+ <script src="assets/js/app/common.js"></script>
+ <script src="assets/js/app/directive/limitTo.js"></script>
+
+
+
+<!-- Tree Structure -->
+<script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery-3.2.1.slim.min.js"%3E%3C/script%3E'))</script>
+    <link rel="stylesheet" href="assets/css/lib/dx.spa.css" />
+    <link rel="stylesheet" href="assets/css/lib/dx.common.css" />
+     <link rel="stylesheet" href="assets/css/lib/dx.light.css" />
+<script>window.angular || document.write(decodeURIComponent('%3Cscript src="js/angular.min.js"%3E%3C\/script%3E'))</script>
+   <script src="assets/js/lib/dx.all.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.js"></script>
+<!-- Custom App CSS -->
+<link rel="stylesheet" href="assets/css/app/customcomponents.css"></link>
+
+</head>
+<body ng-app="productApp">
+
+	<div id="wrapper">
+
+		<div id="main" ng-controller="homeController">
+			
+			<div class="inner hidden-xs" style="border-bottom: solid 5px white; background-color: #215a8f;">
+				<div id="head">
+					
+					<!-- Header -->
+					<header id="header" style="    padding-top: 25px;    padding-bottom: 12px;">
+						<a href="#!" class="logo" style="margin-top: 7px;"><img
+							src="assets/images/inmarlogo.png" alt=""
+							style="margin-top: -18px; !important; width: 55px !important;" /> </a>
+						<h4 style=" font-family: 'Exo 2', serif; font-weight:normal; padding-left: 1em; padding-right: 1em;color: white;" class="mobile">&nbsp;&nbsp;&nbsp;IST</h4>
+						<h3 style="font-size: 1.49em;bottom: 1em !important;font-family: 'Exo 2', serif; font-weight:normal; padding-left: 1em; padding-right: 1em;color: white; " class="desktop">&nbsp;&nbsp;&nbsp;IST</h3>
+						<h4 style="font-family: 'Exo 2', serif; font-weight:normal; padding-left: 1em; padding-right: 1em;color: white;" class="tablet">&nbsp;&nbsp;&nbsp;IST</h4>
+
+					</header>
+					<script type="text/javascript">
+
+					</script>
+
+				</div>
+			</div>
+			<div class="inner visible-xs" style="
+    padding-left: 0px;">
+				<div id="head">
+			
+			<nav class="navbar navbar-default" style="    background-image: linear-gradient(to bottom,#215a8f 0,#215a8f 100%);">
+  <div class="container-fluid" style="padding-left: 50px;">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="padding-bottom: 0px;padding-top: 10px; padding-right: 0px;">
+        <img alt="inmar" src="assets/images/inmarlogo.png" style="width: 35px !important;">
+      
+      </a>
+      <a class="navbar-brand" href="#" style="padding-bottom: 0px;padding-top: 16px;padding-left: 0px;">
+         <h4 style=" font-family: 'Exo 2', serif; font-weight:normal; padding-left: 1em; padding-right: 1em;color: white;" >IST</h4>
+      </a>
+    
+    </div>
+  </div>
+</nav>
+		</div>	</div>
+	<!-- Content -->
+			<div>
+				<section>
+					<div ng-view></div>
+				</section>
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar" ng-controller="homeController">
+			<div class="inner">
+			<!-- Menu -->
+				<nav id="menu">
+					<header class="major" id="menuTitle">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+
+						<li id="menuFonts"><a href="#!"><span class="icon far fa-home control-label">Home page</span></a></li>
+						
+						<li><span class="opener"> <span class="icon far fa-user-plus control-label">Exercises</span></span>
+							<ul>
+								<li><a href="#!build"><span class="icon far fa-user-plus control-label">Exercise 1 - BUILD </span></a></li>
+								<li><a href="#!ux"><span class="icon fal fa-link control-label">Exercise 2 - UX</span></a></li>
+								<li><a href="#!ship"><span class="icon fal fa-link control-label"> Exercise 3 - SHIP</span></a></li>
+								<li><a href="#!run"><span class="icon fal fa-link control-label">Exercise 4 - RUN</span></a></li>
+							</ul>
+						</li>
+						<li><a href="#!reference"><span class="icon fa fa-area-chart control-label">Reference</span></a></li>
+					</ul>
+				</nav>
+
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">
+						&copy; 2018 Sumanth Bayya <a
+							></a>.
+					</p>
+				</footer>
+
+			</div>
+			<!--Pop up for language selection  -->
+
+<!--Pop up for login  -->
+<div class="modal fade" id="loginScreen" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalCenterTitle" aria-hidden="true"
+		data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				 <div class="modal-header" style="    height: 57px !important;">
+                 <div class="row">
+                 <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4">
+                 </div>
+                <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4">
+               <a href="#!" class="logo" style="margin-top: 7px;"><img
+							src="assets/images/inmarlogo.png" alt=""
+							style="margin-top: -10px; !important;width: 55px !important;" /> </a>
+                    </div>
+               <div class="col-xs-3 col-sm-4 col-md-4 col-lg-4">
+                 </div>
+                    <div class="col" style="margin-left: 34.2em !important; margin-top: -1.2em !important;">
+
+                    </div>
+                    </div>
+                </div>
+				<div class="modal-body">
+					<div class="container">
+
+        <h2 class="form-signin-heading" style="color:#2158af;padding-bottom: 20px;">Login to IST</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Username" ng-model="useridUI" required autofocus>
+        
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="passwordUI" required autofocus>
+        <div class="checkbox">
+        </div>
+        <button type="button" class="btn btn-block glass " type="submit" ng-click=""
+						>Sign in </button>
+
+    </div>
+
+				</div>
+				<div class="modal-footer">
+
+						<button type="button" class="btn glass"
+						 data-dismiss="modal">Close </button>
+
+				</div>
+			</div>
+		</div>
+	</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/lib/jquery.min.js"></script>
+	<script src="assets/js/lib/skel.min.js"></script>
+	<script src="assets/js/lib/util.js"></script>
+	<script src="assets/js/lib/main.js"></script>
+	
+</body>
+</html>
